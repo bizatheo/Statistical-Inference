@@ -54,9 +54,9 @@ var(means$x)
 Therefore, the variability in distribution of averages of 40 exponentials is close to the theoretical variance of the distribution.
 
 #### 3. Show that the distribution is approximately normal.
-```{r global_options,echo=F,}
+```{r }
 
-par(mfcol=c(1,2))
+
 library(ggplot2)
 ggplot(data = means, aes(x = x)) + 
     geom_histogram(aes(y=..density..), fill = I('blue'), 
