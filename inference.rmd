@@ -61,9 +61,7 @@ library(ggplot2)
 ggplot(data = means, aes(x = x)) + 
     geom_histogram(aes(y=..density..), fill = I('blue'), 
                   binwidth = 0.20, color = I('black')) +
-    stat_function(fun = dnorm, arg = list(mean = 5, sd = sd(means$x)))
-
-   	      
+    stat_function(fun = dnorm, arg = list(mean = 5, sd = sd(means$x)))	      
 ```
 
 From the above plot, the distribution of averages of 40 exponentials is very close to a normal distribution.
