@@ -63,11 +63,7 @@ ggplot(data = means, aes(x = x)) +
                   binwidth = 0.20, color = I('black')) +
     stat_function(fun = dnorm, arg = list(mean = 5, sd = sd(means$x)))
 
- #use qqplot and qqline to compare the distribution of averages of 40 exponentials
-# to a normal distribution
-#qqnorm(means$x)
-#qqline(means$x, col = 2)
-    	      
+   	      
 ```
 
 From the above plot, the distribution of averages of 40 exponentials is very close to a normal distribution.
